@@ -125,6 +125,14 @@ class SLinkedList:
         else:
             self.head = None
             self.tail = None
+    
+    def lengthSll(self):
+        node = self.head
+        index = 0
+        while node:
+            node = node.next
+            index+=1
+        return index
 
 
 singlyLinkedList = SLinkedList()
